@@ -1,28 +1,26 @@
-console.log('JavaScript file loaded');
-
 let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
 
 function moveLeft() {
-    console.log('Move left called');
-    const carouselImages = document.querySelector('.carousel-images');
-    const totalImages = carouselImages.children.length;
-
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+  if (currentIndex > 0) {
+    currentIndex--;
     updateCarousel();
+  }
 }
 
 function moveRight() {
-    console.log('Move right called');
-    const carouselImages = document.querySelector('.carousel-images');
-    const totalImages = carouselImages.children.length;
-
-    currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+  if (currentIndex < totalSlides - 1) {
+    currentIndex++;
     updateCarousel();
+  }
 }
 
 function updateCarousel() {
-    console.log('Update carousel called');
-    const carouselImages = document.querySelector('.carousel-images');
-    const offset = -currentIndex * 100; // 100% width of each image
-    carouselImages.style.transform = `translateX(${offset}%)`;
+  const offset = -currentIndex * 100; // Adjust 100 to match slide width in percent
+  document.getElementById('carousel-images').style.transform = `translateX(${offset}%)`;
 }
+
+// Event listeners for left and right buttons
+document.querySelector('.carousel-button.left').addEventListener('click', moveLeft);
+document.querySelector('.carousel-button.right').addEventListener('click', moveRight);
