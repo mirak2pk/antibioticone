@@ -936,15 +936,62 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: 873px;
 }
 
+/*BUTTOON 1 */
 .head1 .view-YihZ50 {
   background-color: transparent;
+  border-color: transparent;
+  border: none; 
+  background: none;
   height: 119px;
   left: 234px;
   position: absolute;
   top: 801px;
   width: 614px;
-}
+  border-radius: 65px;
 
+ /*position:fixed;*/ 
+
+    z-index: 1000; 
+  cursor: pointer;
+  animation: pop-in 0.5s ease-in-out; 
+  /*   transition: transform 0.3s ease, background-color 0.3s ease; 
+
+  */
+}
+@keyframes sign-swing {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+}
+@keyframes pop-in {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+.view-YihZ50:hover {
+  animation: sign-swing 0.5s ease-in-out;
+}
+/* Animation on hover 
+.view-YihZ50:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.1); 
+} */
+
+/*finish button 1 */
 .head1 .rectangle-5-JqkpEL {
   background-color: var(--turbo);
 }
@@ -1403,14 +1450,6 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: 588px;
 }
 
-.head1 .view-hbpljd {
-  background-color: transparent;
-  height: 178px;
-  left: 234px;
-  position: absolute;
-  top: 3417px;
-  width: 618px;
-}
 
 .head1 .rectangle-5-tenNu6 {
   background-color: var(--green-house);
@@ -1949,14 +1988,79 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: 616px;
 }
 
+/*BUTTON 4 ANIMATION*/
+
+  /* Keyframes for pop-in animation */
+  @keyframes pop-in {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for recurring pop-up animation */
+@keyframes pop-up {
+    0%, 95% {
+        transform: scale(1);
+    }
+    98% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation on hover - sign-like effect */
+.view-dp5VHa:hover {
+    animation: sign-swing 0.5s ease-in-out;
+}
+
+/* Keyframes for sign-like hover animation */
+@keyframes sign-swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
 .head1 .view-dp5VHa {
   background-color: transparent;
   height: 119px;
   left: 0px;
-  position: absolute;
   top: 0px;
   width: 614px;
+  z-index: 1000;
+  border: none; /* Remove default button border */
+  background: none; 
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
 }
+.view-dp5VHa {
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
+}
+
+
+/* fini 4 button */
+
 
 .head1 .rectangle-5-bstxZb {
   background-color: var(--green-house);
@@ -3939,7 +4043,7 @@ input:focus {
 
 .head1 .x500-50-350-iiKxKp {
   height: 100px;
-  left: 130px;
+  left: 80px;
   transform: translate(0%, -20%);
   line-height: 50.3px;
   position: absolute;
@@ -3950,7 +4054,7 @@ input:focus {
 
 .head1 .x1-50-450-iiKxKp {
   height: 100px;
-  left: 130px;
+  left:80px;
   transform: translate(0%, -20%);
 
   line-height: 50.3px;
@@ -3962,7 +4066,7 @@ input:focus {
 
 .head1 .x500-250-iiKxKp {
   height: 42px;
-  left: 165px;
+  left:115px;
   transform: translate(0%, -20%);
 
   line-height: normal;
@@ -4849,3 +4953,96 @@ text-align: right;
 .active, .dot:hover {
   background-color: #717171;
 }
+
+
+
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.text_label-hqn7q6 {
+  display: inline-block;
+  animation: moveRightToLeft 5s linear infinite;
+  /* Adjust the duration as needed */
+}
+
+
+/* <!-- 3th button: order now  --> */
+
+.head1 .view-hbpljd {
+  background-color: transparent;
+  height: 178px;
+  left: 234px;
+  position: absolute;
+  top: 3417px;
+  width: 618px;
+
+
+}
+
+.view-hbpljd {
+  position: fixed; /* Fix the button on the page */
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
+  
+}
+
+@keyframes pop-in {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Keyframes for recurring pop-up animation */
+@keyframes pop-up {
+  0%, 95% {
+      transform: scale(1);
+  }
+  98% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Animation on hover - sign-like effect */
+.view-hbpljd:hover {
+  animation: sign-swing 0.5s ease-in-out;
+}
+
+/* Keyframes for sign-like hover animation */
+@keyframes sign-swing {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+}
+
+
+/* <!-- finish: 3th button: order now  --> */
