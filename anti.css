@@ -1203,14 +1203,7 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: auto;
 }
 
-.head1 .view-9rGBIu {
-  background-color: transparent;
-  height: 178px;
-  left: 234px;
-  position: absolute;
-  top: 1994px;
-  width: 618px;
-}
+
 
 .head1 .rectangle-5-ISEjx3 {
   background-color: var(--green-house);
@@ -5044,5 +5037,146 @@ text-align: right;
   }
 }
 
+/* Animation on click - scale effect */
+.view-hbpljd:active {
+  animation: click-scale 0.2s ease-in-out;
+}
 
+/* Keyframes for click animation */
+@keyframes click-scale {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Add animation on cursor move over the page */
+body {
+  animation: cursor-move-animation 0.2s ease-in-out forwards;
+}
+
+/* Keyframes for cursor move animation */
+@keyframes cursor-move-animation {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 /* <!-- finish: 3th button: order now  --> */
+
+
+/**BUTTON 2 */
+
+.head1 .view-9rGBIu {
+  background-color: transparent;
+  height: 178px;
+  left: 234px;
+  position: absolute;
+  top: 1994px;
+  width: 618px;
+}
+
+
+.view-9rGBIu {
+  position: fixed; /* Fix the button on the page */
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
+  display: inline-block; /* Ensure the button's content displays correctly */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Keyframes for pop-in animation */
+@keyframes pop-in {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Keyframes for recurring pop-up animation */
+@keyframes pop-up {
+  0%, 95% {
+      transform: scale(1);
+  }
+  98% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Animation on hover - sign-like effect */
+.view-9rGBIu:hover {
+  animation: sign-swing 0.5s ease-in-out;
+}
+
+/* Keyframes for sign-like hover animation */
+@keyframes sign-swing {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+}
+
+/* Animation on click - scale effect */
+.view-9rGBIu:active {
+  animation: click-scale 0.2s ease-in-out;
+}
+
+/* Keyframes for click animation */
+@keyframes click-scale {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Add animation on cursor move over the page */
+body {
+  animation: cursor-move-animation 0.5s ease-in-out forwards;
+}
+
+/* Keyframes for cursor move animation */
+@keyframes cursor-move-animation {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
