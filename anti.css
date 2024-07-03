@@ -936,62 +936,6 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: 873px;
 }
 
-/*BUTTOON 1 */
-.head1 .view-YihZ50 {
-  background-color: transparent;
-  border-color: transparent;
-  border: none; 
-  background: none;
-  height: 119px;
-  left: 234px;
-  position: absolute;
-  top: 801px;
-  width: 614px;
-  border-radius: 65px;
-
- /*position:fixed;*/ 
-
-    z-index: 1000; 
-  cursor: pointer;
-  animation: pop-in 0.5s ease-in-out; 
-  /*   transition: transform 0.3s ease, background-color 0.3s ease; 
-
-  */
-}
-@keyframes sign-swing {
-  0%, 100% {
-      transform: rotate(0deg);
-  }
-  25% {
-      transform: rotate(5deg);
-  }
-  50% {
-      transform: rotate(-5deg);
-  }
-  75% {
-      transform: rotate(5deg);
-  }
-}
-@keyframes pop-in {
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
-.view-YihZ50:hover {
-  animation: sign-swing 0.5s ease-in-out;
-}
-/* Animation on hover 
-.view-YihZ50:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.1); 
-} */
-
-/*finish button 1 */
 .head1 .rectangle-5-JqkpEL {
   background-color: var(--turbo);
 }
@@ -1981,78 +1925,6 @@ background: linear-gradient(0deg, rgba(1, 60, 14, 0.31), rgba(1, 60, 14, 0.31)),
   width: 616px;
 }
 
-/*BUTTON 4 ANIMATION*/
-
-  /* Keyframes for pop-in animation */
-  @keyframes pop-in {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Keyframes for recurring pop-up animation */
-@keyframes pop-up {
-    0%, 95% {
-        transform: scale(1);
-    }
-    98% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Animation on hover - sign-like effect */
-.view-dp5VHa:hover {
-    animation: sign-swing 0.5s ease-in-out;
-}
-
-/* Keyframes for sign-like hover animation */
-@keyframes sign-swing {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    75% {
-        transform: rotate(5deg);
-    }
-}
-
-.head1 .view-dp5VHa {
-  background-color: transparent;
-  height: 119px;
-  left: 0px;
-  top: 0px;
-  width: 614px;
-  z-index: 1000;
-  border: none; /* Remove default button border */
-  background: none; 
-  cursor: pointer; /* Add pointer cursor on hover */
-  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
-}
-.view-dp5VHa {
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  z-index: 1000; /* Ensure it is above other elements */
-  border: none; /* Remove default button border */
-  background: none; /* Remove default button background */
-  cursor: pointer; /* Add pointer cursor on hover */
-  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
-}
-
-
-/* fini 4 button */
 
 
 .head1 .rectangle-5-bstxZb {
@@ -4967,112 +4839,37 @@ text-align: right;
 }
 
 
-/* <!-- 3th button: order now  --> */
-
-.head1 .view-hbpljd {
+/*BUTTOON 1 */
+.head1 .view-YihZ50 {
   background-color: transparent;
-  height: 178px;
+  border-color: transparent;
+  border: none; 
+  background: none;
+  height: 119px;
   left: 234px;
   position: absolute;
-  top: 3417px;
-  width: 618px;
+  top: 801px;
+  width: 614px;
+  border-radius: 65px;
 
+ /*position:fixed;*/ 
 
-}
-
-.view-hbpljd {
-  position: fixed; /* Fix the button on the page */
-  bottom: 20px; /* Adjust as needed */
-  left: 20px; /* Adjust as needed */
-  z-index: 1000; /* Ensure it is above other elements */
-  border: none; /* Remove default button border */
-  background: none; /* Remove default button background */
-  cursor: pointer; /* Add pointer cursor on hover */
-  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
+    z-index: 1000; 
+  cursor: pointer;
   
+  animation: pop-in 0.2s ease-in-out, pop-up 0.7s linear infinite;
+
+  /*   transition: transform 0.3s ease, background-color 0.3s ease; 
+
+  */
 }
 
-@keyframes pop-in {
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
 
-/* Keyframes for recurring pop-up animation */
-@keyframes pop-up {
-  0%, 95% {
-      transform: scale(1);
-  }
-  98% {
-      transform: scale(1.1);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
-
-/* Animation on hover - sign-like effect */
-.view-hbpljd:hover {
+.view-YihZ50:hover {
   animation: sign-swing 0.5s ease-in-out;
 }
 
-/* Keyframes for sign-like hover animation */
-@keyframes sign-swing {
-  0%, 100% {
-      transform: rotate(0deg);
-  }
-  25% {
-      transform: rotate(5deg);
-  }
-  50% {
-      transform: rotate(-5deg);
-  }
-  75% {
-      transform: rotate(5deg);
-  }
-}
-
-/* Animation on click - scale effect */
-.view-hbpljd:active {
-  animation: click-scale 0.2s ease-in-out;
-}
-
-/* Keyframes for click animation */
-@keyframes click-scale {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(0.9);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
-
-/* Add animation on cursor move over the page */
-body {
-  animation: cursor-move-animation 0.2s ease-in-out forwards;
-}
-
-/* Keyframes for cursor move animation */
-@keyframes cursor-move-animation {
-  0% {
-      transform: translateY(-10px);
-      opacity: 0;
-  }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-/* <!-- finish: 3th button: order now  --> */
-
+/*finish button 1 */
 
 /**BUTTON 2 */
 
@@ -5094,23 +4891,13 @@ body {
   border: none; /* Remove default button border */
   background: none; /* Remove default button background */
   cursor: pointer; /* Add pointer cursor on hover */
-  animation: pop-in 0.8s ease-in-out, pop-up 3s ease-in-out infinite; /* Add pop-in and recurring pop-up animation */
+  animation: pop-in 0.2s ease-in-out, pop-up 0.7s linear infinite;
+
   display: inline-block; /* Ensure the button's content displays correctly */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
 }
 
-/* Keyframes for pop-in animation */
-@keyframes pop-in {
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
 
 /* Keyframes for recurring pop-up animation */
 @keyframes pop-up {
@@ -5130,39 +4917,13 @@ body {
   animation: sign-swing 0.5s ease-in-out;
 }
 
-/* Keyframes for sign-like hover animation */
-@keyframes sign-swing {
-  0%, 100% {
-      transform: rotate(0deg);
-  }
-  25% {
-      transform: rotate(5deg);
-  }
-  50% {
-      transform: rotate(-5deg);
-  }
-  75% {
-      transform: rotate(5deg);
-  }
-}
 
 /* Animation on click - scale effect */
 .view-9rGBIu:active {
   animation: click-scale 0.2s ease-in-out;
 }
 
-/* Keyframes for click animation */
-@keyframes click-scale {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(0.9);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
+
 
 /* Add animation on cursor move over the page */
 body {
@@ -5179,4 +4940,198 @@ body {
       transform: translateY(0);
       opacity: 1;
   }
+}
+
+/* <!-- 3th button: order now  --> */
+
+.head1 .view-hbpljd {
+  background-color: transparent;
+  height: 178px;
+  left: 234px;
+  position: absolute;
+  top: 3417px;
+  width: 618px;
+
+
+}
+
+.view-hbpljd {
+  position: fixed; /* Fix the button on the page */
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.2s ease-in-out, pop-up 0.7s linear infinite;
+
+  
+  
+}
+
+
+
+@keyframes pop-up {
+  0%, 95% {
+      transform: scale(1);
+  }
+  98% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.view-hbpljd:hover {
+  animation: sign-swing 0.5s ease-in-out;
+}
+
+@keyframes sign-swing {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+}
+
+.view-hbpljd:active {
+  animation: click-scale 0.2s ease-in-out;
+}
+
+
+body {
+  animation: cursor-move-animation 0.2s ease-in-out forwards;
+}
+
+@keyframes cursor-move-animation {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+/* <!-- finish: 3th button: order now  --> */
+
+
+/*BUTTON 4 ANIMATION*/
+
+
+@keyframes pop-up {
+    0%, 95% {
+        transform: scale(1);
+    }
+    98% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.view-dp5VHa:hover {
+    animation: sign-swing 0.5s ease-in-out;
+}
+
+
+.head1 .view-dp5VHa {
+  background-color: transparent;
+  height: 119px;
+  left: 0px;
+  top: 0px;
+  width: 614px;
+  z-index: 1000;
+  border: none; /* Remove default button border */
+  background: none; 
+  cursor: pointer; /* Add pointer cursor on hover */
+animation:   animation: pop-in 0.2s ease-in-out, pop-up 0.7s linear infinite;
+
+}
+.view-dp5VHa {
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Add pointer cursor on hover */
+  animation: pop-in 0.2s ease-in-out, pop-up 0.7s linear infinite;
+
+}
+
+
+/* fini 4 button */
+
+
+/* Keyframes for animations */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for pop-up animation with specified timing */
+@keyframes pop-up {
+  0% {
+    transform: scale(1);
+  }
+  1.8% {
+    transform: scale(1);
+  }
+  3.6% {
+    transform: scale(1.01);
+  }
+  6.35% {
+    transform: scale(1.03);
+  }
+  9.1% {
+    transform: scale(1.07);
+  }
+  11.4% {
+    transform: scale(1.13);
+  }
+  13.4% {
+    transform: scale(1.19);
+  }
+ 
+ 
+ 
+
+}
+
+/* Keyframes for hover animation */
+@keyframes sign-swing {
+  0%, 80% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+
+}
+
+/* Keyframes for click animation */
+@keyframes click-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+ 
 }
