@@ -14,11 +14,11 @@ class Carousel {
 
     updateGallery(){
         this.carouselArray.forEach(el => {
-            el.classList.remove('.gallery-container-1');
-            el.classList.remove('.gallery-container-2');
-            el.classList.remove('.gallery-container-3');
-            el.classList.remove('.gallery-container-4');
-            el.classList.remove('.gallery-container-5');
+            el.classList.remove('.gallery-item-1');
+            el.classList.remove('.gallery-item-2');
+            el.classList.remove('.gallery-item-3');
+            el.classList.remove('.gallery-item-4');
+            el.classList.remove('.gallery-item-5');
 
 
         });
