@@ -27,6 +27,37 @@ body {
   --font-family-expo_arabic-bold: 'ExpoArabic-Bold';
 }
 
+
+/* Merak */
+.view-i9xJ98 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  transform: scaleX(-1); /* Flips the left button horizontally */
+}
+/* Merak */
+
 .omniview-test-action-links .link {
   height: 30px;
   width: 30px;

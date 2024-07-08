@@ -25,6 +25,42 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+/* Merak */
+let currentIndex = 0;
+const carouselImages = document.querySelector('.carousel-images');
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+const slideWidth = slides[0].clientWidth; // Assuming all slides are the same width
+
+function moveLeft() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  }
+  updateSlidePosition();
+}
+
+function moveRight() {
+  currentIndex++;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+  updateSlidePosition();
+}
+
+function updateSlidePosition() {
+  const offset = -currentIndex * slideWidth;
+  carouselImages.style.transform = `translateX(${offset}px)`;
+}
+
+// Optional: Auto slide
+/*
+setInterval(() => {
+  moveRight();
+}, 3000);
+*/
+
+
 // GROUPS
 
 /**
