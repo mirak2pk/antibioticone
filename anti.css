@@ -72,7 +72,7 @@ body {
 .gallery-item-2, .gallery-item-4 {
   height: 250px;
   opacity: 0.8;
-  width: 300px;
+  width: 250px;
   z-index: 1;  
 }
 
@@ -87,7 +87,7 @@ body {
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 430px;
+  width: 300px;
   z-index: 2;
 
 }
