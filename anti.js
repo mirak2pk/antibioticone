@@ -80,8 +80,7 @@ class Carousel {
             el.classList.remove('mask-group-3@2x');
             el.classList.remove('mask-group-4@2x');
             el.classList.remove('mask-group-5@2x');
-            el.classList.remove('sans-tit-plan-de-travail-1-1');
-            el.classList.remove('mask-group-6@2x');
+
 
         })
 
