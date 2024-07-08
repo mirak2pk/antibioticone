@@ -21,11 +21,11 @@ class Carousel {
             el.classList.remove('mask-group-5@2x');
 
 
-        })
+        });
 
         this.carouselArray.slice(0, 5).foreach((el, i) => {
             el.classList.add(`gallery-item-${i+1}`);
-        })
+        });
     }
 
     setCurrentState(direction){
