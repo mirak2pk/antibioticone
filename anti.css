@@ -41,6 +41,10 @@ body {
 }
 .gallery {
   width: 100%;
+  background-color: transparent;
+  height: 638px;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-container {
