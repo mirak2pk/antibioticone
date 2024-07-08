@@ -14,11 +14,11 @@ class Carousel {
 
     updateGallery(){
         this.carouselArray.forEach(el => {
-            el.classList.remove('mask-group-1@2x');
-            el.classList.remove('mask-group-2@2x');
-            el.classList.remove('mask-group-3@2x');
-            el.classList.remove('mask-group-4@2x');
-            el.classList.remove('mask-group-5@2x');
+            el.classList.remove('gallery-container-1');
+            el.classList.remove('gallery-container-2');
+            el.classList.remove('gallery-container-3');
+            el.classList.remove('gallery-container-4');
+            el.classList.remove('gallery-container-5');
 
 
         });
