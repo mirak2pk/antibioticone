@@ -27,17 +27,15 @@ function showSlides(n) {
 
 /* Merak */
 let currentIndex = 0;
-const carouselImages = document.querySelector('.carousel-images');
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
-const slideWidth = slides[0].clientWidth; // Assuming all slides are the same width
 
 function moveLeft() {
   currentIndex--;
   if (currentIndex < 0) {
     currentIndex = totalSlides - 1;
   }
-  updateSlidePosition();
+  updateSlideVisibility();
 }
 
 function moveRight() {
@@ -45,13 +43,22 @@ function moveRight() {
   if (currentIndex >= totalSlides) {
     currentIndex = 0;
   }
-  updateSlidePosition();
+  updateSlideVisibility();
 }
 
-function updateSlidePosition() {
-  const offset = -currentIndex * slideWidth;
-  carouselImages.style.transform = `translateX(${offset}px)`;
+function updateSlideVisibility() {
+  slides.forEach((slide, index) => {
+    if (index === currentIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
 }
+
+// Initial slide display
+updateSlideVisibility();
+
 
 // Optional: Auto slide
 /*
