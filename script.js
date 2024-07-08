@@ -58,6 +58,6 @@ class Carousel {
 
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 exampleCarousel.setControls();
-//exampleCarousel.useControls();
+exampleCarousel.useControls();
 
 /* Merak */
