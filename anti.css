@@ -144,7 +144,7 @@ body {
   width: 5px;
 }
 
-.gallery-controls-previous:hover::before{
+.gallery-controls-previous:hover:before{
   left: -40px;
 }
 
@@ -152,7 +152,7 @@ body {
   position: relative;
 }
 
-.gallery-controls-next::before{
+.gallery-controls-next:before{
   border: solid #000;
   border-width: 0 5px 5px 0;
   content: '';
