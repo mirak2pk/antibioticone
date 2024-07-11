@@ -524,7 +524,7 @@
           الحيوي الطبيعي</p>
       </div>
 
-      <!-- عـروض خاصــة  -->
+      <!-- عروض خاصــة  -->
 
       <div>
         <div class="view-ePCBpJ" data-id="1:207"><img class="rectangle-16-O2U5OS" data-id="1:208"
@@ -578,6 +578,53 @@
             </div>
 
           </div>
+
+          <div class="slideshow-container">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="md-zk-1.png" alt="Slide 1">
+                    <div class="price-overlay">
+                        <div>450 DH</div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="md--zk-500g-1.png" alt="Slide 2">
+                    <div class="price-overlay">
+                        <div>350 DH</div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="md-500-1.png" alt="Slide 3">
+                    <div class="price-overlay">
+                        <div>250 DH</div>
+                    </div>
+                </div>
+                <!-- Duplicate Slides for Continuous Looping -->
+                <div class="slide">
+                    <img src="md-zk-1.png" alt="Slide 1">
+                    <div class="price-overlay">
+                        <div>450 DH</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="md--zk-500g-1.png" alt="Slide 2">
+                    <div class="price-overlay">
+                        <div>350 DH</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="md-500-1.png" alt="Slide 3">
+                    <div class="price-overlay">
+                        <div>250 DH</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
         </div>
       </div>
 
@@ -788,5 +835,28 @@
 
 
 </body>
+
+<script>
+  // JavaScript for sliding effect
+  const slides = document.querySelector('.slides');
+  let slideIndex = 0;
+
+  function moveSlides() {
+      slideIndex++;
+      slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Move by 1/3rd of container width
+      if (slideIndex === 3) { // Reset after third slide
+          slideIndex = 0;
+          setTimeout(() => {
+              slides.style.transition = 'none'; // Disable transition for instant reset
+              slides.style.transform = 'translateX(0)';
+              setTimeout(() => {
+                  slides.style.transition = 'transform 1s ease-in-out'; // Re-enable transition
+              }, 50);
+          }, 1000); // Delay before resetting
+      }
+  }
+
+  setInterval(moveSlides, 3000); // Adjust timing for sliding
+</script>
 
 </html>
