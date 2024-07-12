@@ -22,42 +22,6 @@ body {
 }
 
 
-.slideshow-container {
-  position: relative;
-  width: 70%;
-  max-width: 800px;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 1s ease-in-out;
-}
-
-.slide {
-  flex: 0 0 33.33%; /* Each slide takes up 1/3rd of container */
-  padding: 10px;
-  box-sizing: border-box;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.price-overlay {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 10px;
-  border-radius: 10px;
-}
-
 
 @font-face {
   font-family: 'ExpoArabic-Bold';
